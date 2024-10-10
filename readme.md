@@ -41,6 +41,3 @@ See `requirements.txt` for a full list of dependencies.
 
 ## Author
 Galang
-
-## Last Updated
-2024-03-14
