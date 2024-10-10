@@ -40,4 +40,4 @@ Both datasets should be placed in a 'Dataset' folder in the project directory.
 See `requirements.txt` for a full list of dependencies.
 
 ## Author
-Galang
+Galang Rakha Ahnanta
