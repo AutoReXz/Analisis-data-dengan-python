@@ -1,43 +1,55 @@
-# Bike Rental Analysis Dashboard
 
-## Overview
-This project provides a comprehensive analysis of bike rental patterns using Streamlit. The dashboard offers insights into daily patterns, seasonal trends, and weather impacts on bike rentals.
+# 🚲 Bike Rental Analysis Dashboard
 
-## Features
-- Interactive filters for year, season, and time range
-- Key performance metrics display
-- Multiple analysis tabs:
-  - Daily Patterns
-  - Seasonal Analysis
-  - Weather Impact
-- Insights and business recommendations
+## Overview 🌍
+This project provides an in-depth analysis of bike rental patterns using **Streamlit**, helping users explore data from multiple perspectives. With interactive features, you can analyze daily patterns, seasonal trends, and assess the impact of weather conditions on bike rentals.
 
-## Installation
-1. Clone this repository
-2. Install required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Run the dashboard:
-   ```
-   streamlit run dashboard.py
-   ```
+## 🔥 Features
+- **Interactive filters**: Easily adjust for year, season, and time range to refine analysis.
+- **Key Performance Metrics**: Visualize essential stats with clear and concise indicators.
+- **Multi-tab Analysis**:
+  - 📅 **Daily Patterns**: Discover daily usage trends.
+  - 🍂 **Seasonal Analysis**: Understand how rentals fluctuate with seasons.
+  - 🌦️ **Weather Impact**: Evaluate how weather influences rentals.
+- **Business Recommendations**: Leverage insights to make data-driven decisions.
 
-## Data
-The dashboard uses two datasets:
-- day.csv: Daily aggregated rental data
-- hour.csv: Hourly rental data
+## 🚀 Getting Started
 
-Both datasets should be placed in a 'Dataset' folder in the project directory.
+### 1. Clone the Repository
+To get started, clone this repository to your local machine:
+```bash
+git clone https://github.com/AutoReXz/Analisis-data-dengan-python.git
+```
 
-## Structure
-- `dashboard.py`: Main application file
-- `Dataset/`: Folder containing required datasets
+### 2. Install Dependencies
+Make sure you have Python installed. Install the required Python packages:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Dashboard
+Launch the dashboard using the following command:
+```bash
+streamlit run dashboard.py
+```
+
+## 📊 Data
+The dashboard relies on two datasets:
+- **day.csv**: Aggregated daily bike rental data.
+- **hour.csv**: Hourly bike rental data.
+
+Make sure to place both datasets in a folder called `Dataset` within the project directory.
+
+## 🗂️ Project Structure
+- `dashboard.py`: The main application file to run the Streamlit dashboard.
+- `Dataset/`: Folder containing the required datasets:
   - `day.csv`
   - `hour.csv`
 
-## Dependencies
-See `requirements.txt` for a full list of dependencies.
+## 🛠️ Dependencies
+Refer to the `requirements.txt` file for a full list of required Python libraries and dependencies.
 
-## Author
-Galang Rakha Ahnanta
+## 🧑‍💻 Author
+This project is developed and maintained by **Galang Rakha Ahnanta**.
+
+---
