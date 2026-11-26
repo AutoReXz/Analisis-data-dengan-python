@@ -10,7 +10,7 @@ This coursework project uses Python to explore how bike rentals vary by hour, se
 
 ## Run Locally
 
-From the repository root, using Python 3.11:
+From the repository root, using Python 3.12:
 
 ```bash
 python -m venv .venv
@@ -19,11 +19,11 @@ python -m venv .venv
 Activate the environment with `source .venv/bin/activate` on macOS or Linux, or `\.venv\Scripts\Activate.ps1` in Windows PowerShell. Then run:
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt "scipy<1.16"
 python -m streamlit run dashboard.py
 ```
 
-Open the local URL shown by Streamlit. The CSVs are included in `Dataset/` and the dashboard reads them from that path.
+The SciPy constraint keeps the pinned statsmodels release compatible with the Plotly trendline. Open the local URL shown by Streamlit. The CSVs are included in `Dataset/` and the dashboard reads them from that path.
 
 ## Repository Contents
 
