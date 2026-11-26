@@ -1,55 +1,39 @@
+# Bike Rental Analysis Dashboard
 
-# 🚲 Bike Rental Analysis Dashboard
+This coursework project uses Python to explore how bike rentals vary by hour, season, and weather. It includes an exploratory notebook and a Streamlit dashboard built from historical Capital Bikeshare data.
 
-## Overview 🌍
-This project provides an in-depth analysis of bike rental patterns using **Streamlit**, helping users explore data from multiple perspectives. With interactive features, you can analyze daily patterns, seasonal trends, and assess the impact of weather conditions on bike rentals.
+## What to Explore
 
-## 🔥 Features
-- **Interactive filters**: Easily adjust for year, season, and time range to refine analysis.
-- **Key Performance Metrics**: Visualize essential stats with clear and concise indicators.
-- **Multi-tab Analysis**:
-  - 📅 **Daily Patterns**: Discover daily usage trends.
-  - 🍂 **Seasonal Analysis**: Understand how rentals fluctuate with seasons.
-  - 🌦️ **Weather Impact**: Evaluate how weather influences rentals.
-- **Business Recommendations**: Leverage insights to make data-driven decisions.
+- Compare average hourly rentals on working and non-working days.
+- Inspect seasonal and monthly patterns and compare rental counts across weather categories.
+- Use the year filter across the dashboard, the hour range for hourly patterns, and the season selection for daily summaries. Keep at least one season selected.
 
-## 🚀 Getting Started
+## Run Locally
 
-### 1. Clone the Repository
-To get started, clone this repository to your local machine:
+From the repository root, using Python 3.11:
+
 ```bash
-git clone https://github.com/AutoReXz/Analisis-data-dengan-python.git
+python -m venv .venv
 ```
 
-### 2. Install Dependencies
-Make sure you have Python installed. Install the required Python packages:
+Activate the environment with `source .venv/bin/activate` on macOS or Linux, or `\.venv\Scripts\Activate.ps1` in Windows PowerShell. Then run:
+
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
+python -m streamlit run dashboard.py
 ```
 
-### 3. Run the Dashboard
-Launch the dashboard using the following command:
-```bash
-streamlit run dashboard.py
-```
+Open the local URL shown by Streamlit. The CSVs are included in `Dataset/` and the dashboard reads them from that path.
 
-## 📊 Data
-The dashboard relies on two datasets:
-- **day.csv**: Aggregated daily bike rental data.
-- **hour.csv**: Hourly bike rental data.
+## Repository Contents
 
-Make sure to place both datasets in a folder called `Dataset` within the project directory.
+- [Proyek_Analisis_Data.ipynb](Proyek_Analisis_Data.ipynb) — Data inspection, exploratory analysis, visualizations, and interpretation.
+- [dashboard.py](dashboard.py) — Streamlit dashboard with pandas and Plotly.
+- [Dataset/](Dataset/) — Daily and hourly rental counts and accompanying weather records.
+- [requirements.txt](requirements.txt) — Pinned Python dependencies for the dashboard.
 
-## 🗂️ Project Structure
-- `dashboard.py`: The main application file to run the Streamlit dashboard.
-- `Dataset/`: Folder containing the required datasets:
-  - `day.csv`
-  - `hour.csv`
+## Data Attribution
 
-## 🛠️ Dependencies
-Refer to the `requirements.txt` file for a full list of required Python libraries and dependencies.
+The Bike Sharing Dataset was prepared by Hadi Fanaee-T using Capital Bikeshare records from 2011 and 2012. The repository includes the original data notes and citation. The dashboard describes patterns in that observation period.
 
-## 🧑‍💻 Author
-This project is developed and maintained by **Galang Rakha Ahnanta**.
-
----
+[UCI Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) · [Original data notes](Dataset/Readme.txt)
